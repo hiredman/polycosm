@@ -5,6 +5,11 @@
     that one old library
 
 * Usage
+  - add polycosm to your dependencies
+#+BEGIN_SRC clojure
+[polycosm 0.0.1]
+#+END_SRC
+  - then off you go
 #+BEGIN_SRC clojure
 *clojure-version*
 ;=> {:major 1, :minor 4, :incremental 0, :qualifier nil}
