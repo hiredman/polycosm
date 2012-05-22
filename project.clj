@@ -1,4 +1,4 @@
-(defproject polycosm "0.0.1"
+(defproject polycosm "0.0.2-SNAPSHOT"
   :description "expose maven dependencies via jboss modules"
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [org.jboss.modules/jboss-modules "1.1.2.GA"]
