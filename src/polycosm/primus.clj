@@ -20,7 +20,10 @@
   #{"org/xml/sax"
     "org/xml/sax/helpers"
     "javax/xml/parsers"
-    "javax/transaction/xa"})
+    "javax/transaction/xa"
+    "javax/management"
+    "javax/management/remote"
+    "javax/management/openmbean"})
 
 (defn maven-module-loader
   "system paths are similar to :provided scoping in maven, but for the
