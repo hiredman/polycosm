@@ -11,7 +11,8 @@
            (java.util.jar Attributes$Name)))
 
 (defn jar-resource-loader [jar-file]
-  (first (for [c (.getDeclaredConstructors JarFileResourceLoader)]
+  (first (for [c (.getDeclaredConstructors JarFileResourceLoader)
+               :when (= 2 (count (.getParameterTypes c)))]
            (.newInstance
             (doto c (.setAccessible true))
             (into-array Object ["" jar-file])))))
